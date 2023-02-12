@@ -1,0 +1,32 @@
+.container-box {
+  display: flex;
+  height: 100vh;
+  width: 75%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(24px);
+  padding: 88px 100px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  /* line-height: 120%; */
+  color: #fff;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 40px;
+}

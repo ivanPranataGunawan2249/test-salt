@@ -1,0 +1,167 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 75%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello-section {
+  margin-bottom: 50px;
+}
+
+.section-1 {
+  font-weight: 700;
+  font-size: 32px;
+  /* line-height: 150%; */
+}
+
+.section-2 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form-container {
+  margin-top: 24px;
+  display: block;
+}
+
+.label-form {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3e334e;
+}
+
+.input-form {
+  width: 90%;
+  padding: 16px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.additional-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.invalid-feedback {
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.check-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox {
+  accent-color: #7879f1;
+}
+
+.forgot-password {
+  color: #3e334e;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.remember-me {
+  font-weight: 400;
+  font-size: 16px;
+  color: #3e334e;
+}
+
+.form-button {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.login-button {
+  background-color: #7879f1;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 0;
+  width: 120%;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.signup-button {
+  border-color: #3e334e;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px 0;
+  color: #3e334e;
+  width: 120%;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.another-login {
+  margin-top: 48px;
+}
+
+.another-text {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.another-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-social {
+  border-color: #afa2c3;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px 0;
+  color: #3e334e;
+  width: 30%;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .section-1 {
+    font-weight: 700;
+    font-size: 25px;
+    /* line-height: 150%; */
+  }
+
+  .section-2 {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .forgot-password {
+    font-size: 14px;
+  }
+
+  .remember-me {
+    font-size: 14px;
+  }
+
+  .button-social {
+    font-size: 12px;
+  }
+}

@@ -13,8 +13,11 @@ function Login() {
   });
   const [showPassword, setShowPassword] = useState(false);
 
+  const [loading, setLoading] = useState(false);
+
   function handleSubmit(e) {
     e.preventDefault();
+    setLoading(true);
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
 
@@ -44,7 +47,12 @@ function Login() {
     setError(newError);
 
     if (!hasError) {
-      alert("Anda Berhasil Masuk.");
+      const timer = setTimeout(() => {
+        alert("Anda Berhasil Masuk.");
+        setLoading(false);
+      }, 3000);
+    } else {
+      setLoading(false);
     }
   }
 
@@ -102,8 +110,8 @@ function Login() {
               </a>
             </div>
             <div className="form-button">
-              <button type="submit" className="login-button">
-                Login
+              <button type="submit" className="login-button" disabled={loading}>
+                {loading ? "Loading..." : "Login"}
               </button>
               <button className="signup-button">Sign Up</button>
             </div>
